@@ -8,11 +8,11 @@ const Home = () => {
     const [blogs, setBlogs] = useState([]);
 
 
-    useEffect(() =>{
+    useEffect(() => {
         fetch('data.json')
-        .then(res => res.json())
-        .then(data => setBlogs(data))
-    } ,[])
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+    }, [])
 
 
 
@@ -25,8 +25,15 @@ const Home = () => {
                         blogs.map(blog => <Blog blog={blog}></Blog>)
                     }
                 </div>
-                <div className="bookmark-container">
 
+
+                <div>
+                    <div className='time-container'>
+                        <p>Spent time on read : <span>177</span> min</p>
+                    </div>
+                    <div className="bookmark-container">
+
+                    </div>
                 </div>
             </div>
         </div>
