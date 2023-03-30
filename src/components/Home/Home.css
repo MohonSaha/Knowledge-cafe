@@ -43,12 +43,12 @@
 
     .home-container {
         grid-template-columns: repeat(1, 1fr);
-        /* width: 100vw; */
     }
 
     .cart-container{
         width: 100%;
-        padding: 0px 20px;
+        padding: 0px 20px;       
+        order: 2;
     }
 
     .bookmark-container{
@@ -62,7 +62,6 @@
 
     .blog-container {
         grid-template-columns: repeat(1, 1fr);
-        order: 2;
         grid-gap: 45px;
         margin: 0px;
         padding: 20px;
