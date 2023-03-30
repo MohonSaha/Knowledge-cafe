@@ -1,0 +1,49 @@
+[
+    {
+        "id": "knowlenge-store01",
+        "blog_title": "10 Common Programming Pitfalls and How to Avoid Them",
+        "author_name": "Mohon Saha",
+        "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-1.jpg",
+        "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-1.jpg",
+        "read_time": 5,
+        "publish": "May-14-2020"
+    },
+    {
+        "id": "knowlenge-store02",
+        "blog_title": "The Top 5 Programming Languages to Learn in 2023",
+        "author_name": "Shanto Alom",
+        "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-4.jpg",
+        "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-2.jpg",
+        "read_time": 8,
+        "publish": "feb-19-2020"
+    },
+    {
+        "id": "knowlenge-store03",
+        "blog_title": "The Art of Debugging: Tips and Tricks for Finding and Fixing Bugs",
+        "author_name": "Aishee Das",
+        "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-2.jpg",
+        "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-3.jpg",
+        "read_time": 13,
+        "publish": "jnu-23-2021"
+    },
+    {
+        "id": "knowlenge-store04",
+        "blog_title": "Best Practices for Object-Oriented Programming",
+        "author_name": "Fariya Jesmin",
+        "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-3.jpg",
+        "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-4.jpg",
+        "read_time": 17,
+        "publish": "Dec-14-2021"
+    },
+    {
+        "id": "knowlenge-store05",
+        "blog_title": "How to Build a RESTful API: A Step-by-Step Guide",
+        "author_name": "Subrata Sarker",
+        "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-5.jpg",
+        "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-5.jpg",
+        "read_time": 20,
+        "publish": "feb-14-2023"
+    }
+
+    
+]

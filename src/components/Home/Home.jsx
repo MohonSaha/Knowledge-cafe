@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Blog from '../Blog/Blog';
+import './Home.css'
 
 const Home = () => {
 
 
+    const [blogs, setBlogs] = useState([]);
+
+
+    useEffect(() =>{
+        fetch('data.json')
+        .then(res => res.json())
+        .then(data => setBlogs(data))
+    } ,[])
 
 
 
@@ -11,7 +21,9 @@ const Home = () => {
         <div>
             <div className="home-container">
                 <div className="blog-container">
-
+                    {
+                        blogs.map(blog => <Blog blog={blog}></Blog>)
+                    }
                 </div>
                 <div className="bookmark-container">
 
