@@ -43,25 +43,33 @@
 
     .home-container {
         grid-template-columns: repeat(1, 1fr);
-
+        /* width: 100vw; */
     }
 
-    .bookmark-container {
-        width: 75vw;
+    .cart-container{
+        width: 100%;
+        padding: 0px 20px;
+    }
 
-        position: relative;
-        margin: 40px auto;
-        left: 1%;
+    .bookmark-container{
+        margin: 0px;
+    }
+
+
+    .time-container{
+        width: 100%;
     }
 
     .blog-container {
-        /* margin: 50px; */
         grid-template-columns: repeat(1, 1fr);
         order: 2;
         grid-gap: 45px;
-        /* width: 80vw; */
-        /* margin: 50px auto; */
-        width: 70vw;
+        margin: 0px;
+        padding: 20px;
+        margin-top: 30px;
+        /* width: 60vw; */
+        width: 100%;
+        /* margin: 20px; */
         /* text-align: center; */
     }
 

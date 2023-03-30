@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
 
 
-                <div>
+                <div className='cart-container'>
                     <div className='time-container'>
                         <p>Spent time on read : <span>177</span> min</p>
                     </div>
