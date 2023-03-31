@@ -1,6 +1,7 @@
 .home-container {
     display: grid;
     grid-template-columns: 4fr 2fr;
+    margin-top: 80px;
 }
 
 .blog-container {
@@ -38,9 +39,6 @@
 
 .bookmark-container div{
     margin-top: 30px;
-}
-
-/* .bookmark-container div:hover{ */
 }
 
 

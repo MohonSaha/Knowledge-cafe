@@ -43,7 +43,7 @@ const Home = () => {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Something went wrong!',
+                text: 'You Have Already Bookmarked This Blog!',
                 footer: '<a href="">Why do I have this issue?</a>'
             });
             return handleBookmark;
