@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
-import './Home.css'
+import './Home.css';
+import Swal from 'sweetalert2';
 
 const Home = () => {
 
@@ -8,6 +9,7 @@ const Home = () => {
     const [blogs, setBlogs] = useState([]);
     const [readBlogs, setReadBlogs] = useState([]);
     const [time, setTime] = useState(0);
+    const [bookmark, setBookmark] = useState([]);
 
 
     const handleMarkAsRead = (blog) => {
@@ -19,6 +21,37 @@ const Home = () => {
         }
         setTime(time)
         setReadBlogs(newRead);
+    }
+
+
+    const handleBookmark = (blog) =>{
+        // console.log(blog);
+        // const newBookmark = [...bookmark, blog];
+        // console.log(newBookmark);
+        // for(const blg of newBookmark){
+            let newBookmark =[];
+
+            const bookmarked = bookmark.find(markedBlog => markedBlog.id == blog.id);
+
+            
+            if(!bookmarked){
+                console.log("new bookmarked");
+                newBookmark = [...bookmark, blog];
+            }
+            else{
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                  });
+                return handleBookmark;
+            }
+
+        // }
+        // console.log(bookmark);
+
+        setBookmark(newBookmark)
     }
 
 
@@ -42,6 +75,8 @@ const Home = () => {
                     {
                         blogs.map(blog => <Blog
                             handleMarkAsRead={handleMarkAsRead}
+                            handleBookmark={handleBookmark}
+                            key={blog.id}
                             blog={blog}></Blog>)
                     }
                 </div>
