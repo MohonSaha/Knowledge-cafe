@@ -10,16 +10,29 @@
 .header a {
     text-decoration: none;
     color: white;
-    margin-left: 30px;
-    font-weight: 600;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .header a:hover {
     color: orange;
 }
 
-.header img {
-    width: 60px;
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item img{
+    margin-left: 40px; 
+    width: 50px;
+}
+
+.brand-name h1{
+    color: white;
 }
 
 
@@ -35,7 +48,7 @@
     }
 
     .header img {
-        width: 32px;
+        width: 28px;
     }
 
     .header a {
@@ -44,5 +57,11 @@
         font-weight: 500;
     }
 
+    .brand-name h1{
+        font-size: 18px;
+    }
 
+    .nav-item img{
+        margin-left: 10px;
+    }
 }
