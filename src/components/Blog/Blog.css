@@ -35,9 +35,21 @@
     margin-left: 15px;
 }
 
-.publish p,
+.publish span,
 .author-name p {
     color: grey;
+}
+
+
+.bookMark{
+    margin-left: 8px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.bookMark:hover{
+    color: rgb(254, 86, 57);
+    scale: 1.4;
 }
 
 .cart-details {
@@ -53,7 +65,14 @@
     color: #6047EC;
     font-weight: 600;
     cursor: pointer;
-    border-bottom: 1px solid #6047EC;  
+    border-bottom: 1px solid #6047EC;    
+    transition-duration: 200ms; 
+}
+
+
+.cart-details span:hover{
+    font-size: 17px;
+    color: #2b06fc;
 }
 
 

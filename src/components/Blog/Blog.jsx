@@ -1,7 +1,11 @@
 import React from 'react';
 import './Blog.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Blog = (props) => {
+
+    const handleMarkAsRead = props.handleMarkAsRead;
 
     const { author_img, author_name, blog_title, cover_img, id, publish, read_time } = props.blog;
 
@@ -22,13 +26,13 @@ const Blog = (props) => {
                             </div>
                         </div>
                         <div className='publish'>
-                            <p>{read_time} min read</p>
+                            <span>{read_time} min read</span> <FontAwesomeIcon className='bookMark' icon={faBookmark} />
                         </div>
                     </div>
 
                     <div className="cart-details">
                         <h1>{blog_title}</h1>
-                        <span>Mark as read</span>
+                        <span onClick={() => handleMarkAsRead(props.blog)}>Mark as read</span>
                     </div>
                 </div>
             </div>

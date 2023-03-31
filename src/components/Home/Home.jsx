@@ -6,6 +6,24 @@ const Home = () => {
 
 
     const [blogs, setBlogs] = useState([]);
+    const [readBlogs, setReadBlogs] = useState([]);
+    const [time, setTime] = useState(0);
+
+
+    const handleMarkAsRead = (blog) => {
+        const newRead = [...readBlogs, blog];
+        let time = 0;
+        for (const blg of newRead) {
+            const watchTime = blg.read_time;
+            time = time + watchTime;
+        }
+        setTime(time)
+        setReadBlogs(newRead);
+    }
+
+
+
+
 
 
     useEffect(() => {
@@ -22,14 +40,16 @@ const Home = () => {
             <div className="home-container">
                 <div className="blog-container">
                     {
-                        blogs.map(blog => <Blog blog={blog}></Blog>)
+                        blogs.map(blog => <Blog
+                            handleMarkAsRead={handleMarkAsRead}
+                            blog={blog}></Blog>)
                     }
                 </div>
 
 
                 <div className='cart-container'>
                     <div className='time-container'>
-                        <p>Spent time on read : <span>177</span> min</p>
+                        <p>Spent time on read : <span>{time}</span> min</p>
                     </div>
                     <div className="bookmark-container">
 
