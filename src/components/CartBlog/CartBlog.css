@@ -4,3 +4,8 @@
     border-radius: 10px;
     text-align: left;
 }
+
+.blog-cart:hover{   
+    transform: scale(1.04);
+    transition-duration: 500ms;
+}
