@@ -1,24 +1,46 @@
-.article-container{
+.article-container {
     margin: 10px 70px 60px;
 }
 
-.article{
+.article {
     padding: 16px 24px;
     border-radius: 10px;
     margin-bottom: 40px;
-    
-    box-shadow: inset 0 -3em 3em rgba(232, 234, 88, 0.3),  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    box-shadow: inset 0 -3em 3em rgba(232, 234, 88, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+code{
+    color: blue;
+}
 
-.atricle-ans{
+.atricle-ans {
     margin-top: 20px;
     font-size: 22px;
     margin-left: 40px;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f7da;
+}
+
+
+
+
 @media screen and (max-width:576px) {
-    .article-container{
+    .article-container {
         width: 90%;
         margin: 30px 20px 30px;
     }

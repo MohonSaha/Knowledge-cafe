@@ -24,9 +24,28 @@ const Qna = () => {
 
             <div className='atricle-two article'>
                 <h1>2. Props vs state:</h1>
-                <p className='atricle-ans'><strong>Props:</strong> Props are known as properties it can be used to pass data from one component to another. Props cannot be modified, read-only, and Immutable. <br />
-                    <strong>State:</strong> The state represents parts of an Application that can change. Each component can have its State. The state is Mutable and It is local to the component only.
-                </p>
+                <p className='atricle-ans'>
+                    <strong>Props:</strong> Props are known as properties it can be used to pass data from one component to another. Props cannot be modified, read-only, and Immutable. <br />
+                    <strong>State:</strong> The state represents parts of an Application that can change. Each component can have its State. The state is Mutable and It is local to the component only. <br /> <br />
+                </p>  
+                <table>
+                        <tr>
+                            <th>PROPS</th>
+                            <th>STATE</th>
+                        </tr>
+                        <tr>
+                            <td>The Data is passed from one component to another.</td>
+                            <td>The Data is passed within the component only.</td>
+                        </tr>
+                        <tr>
+                            <td>It is Immutable (cannot be modified).</td>
+                            <td>It is Mutable ( can be modified).</td>
+                        </tr>
+                        <tr>
+                            <td>Props can be used with state and functional components.</td>
+                            <td>State can be used only with the state components/class component.</td>
+                        </tr>
+                    </table>
 
 
             </div>
@@ -34,22 +53,22 @@ const Qna = () => {
             <div className='atricle-three article'>
                 <h1>3. Purpose of useEffect other than fetching data:</h1>
                 <p className='atricle-ans'>
-                    The primary purpose of the useEffect hook in React is to handle side effects within functional components. Fetching data is a common use case for the useEffect hook, there are many other side effects that you might need to handle in your components.
-                    Some other examples of side effects that you might handle with useEffect include: <br /> <br />
+                    The primary purpose of the useEffect hook in React is to handle side effects within functional components. Fetching data is a common use case for the useEffect hook, there are many other side effects of useEffect.
+                    Some other examples of side effects:<br /> <br />
 
-                    <strong>Manipulating the DOM:</strong> You can use useEffect to modify the DOM, such as adding or removing event listeners, changing styles or class names, or updating the content of an element. <br /> <br />
+                    <strong>Manipulating the DOM:</strong> I can use useEffect to modify the DOM, such as adding or removing event listeners, changing styles or class names, or updating the content of an element. <br /> <br />
 
-                    <strong>Setting up timers or intervals:</strong> If your component needs to run a timer or interval, you can use useEffect to set up the timer and clear it when the component is unmounted. <br /> <br />
+                    <strong>Setting up timers or intervals:</strong> If my component needs to run a timer or interval, I can use useEffect to set up the timer and clear it when the component is unmounted. <br /> <br />
 
-                    <strong>Updating the document title:</strong> If your component needs to update the title of the document, you can use useEffect to set the title. <br /> <br />
+                    <strong>Updating the document title:</strong> If my component needs to update the title of the document, I can use useEffect to set the title. <br /> <br />
 
-                    <strong>Handling user input:</strong> You can use useEffect to handle user input, such as debouncing search queries or validating form data.
+                    <strong>Handling user input:</strong> I can use useEffect to handle user input, such as debouncing search queries or validating form data.
                 </p>
 
 
             </div>
 
-            <div className='atricle-three article'>
+            <div className='atricle-four article'>
                 <h1>4. How Does React work?</h1>
                 <p className='atricle-ans'>
                     React basically maintains a tree for us. This tree is able to do efficient diff computations on the nodes.
