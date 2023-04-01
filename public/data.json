@@ -29,7 +29,7 @@
     {
         "id": "knowlenge-store04",
         "blog_title": "Best Practices for Object-Oriented Programming",
-        "author_name": "Fariya Jesmin",
+        "author_name": "Tia Jesmin",
         "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-3.jpg",
         "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-4.jpg",
         "read_time": 17,
@@ -38,7 +38,7 @@
     {
         "id": "knowlenge-store05",
         "blog_title": "How to Build a RESTful API: A Step-by-Step Guide",
-        "author_name": "Subrata Sarker",
+        "author_name": "Devid Ron",
         "author_img": "https://mohon-car-world.netlify.app/banner-man/Person/img-5.jpg",
         "cover_img": "https://mohon-car-world.netlify.app/banner-man/Banner/img-5.jpg",
         "read_time": 20,

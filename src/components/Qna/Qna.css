@@ -1,0 +1,36 @@
+.article-container{
+    margin: 10px 70px 60px;
+}
+
+.atricle-one{
+    background-color: rgb(109, 243, 127);
+    padding: 16px 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.atricle-ans{
+    margin-top: 20px;
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+@media screen and (max-width:576px) {
+    .article-container{
+        width: 90%;
+        margin: 30px 20px 30px;
+    }
+    
+    /* .atricle-one{
+        background-color: rgb(109, 243, 127);
+        padding: 16px 24px;
+        border-radius: 10px;
+    } */
+    
+    /* .atricle-ans{
+        font-size: 22px;
+        margin-left: 40px;
+    } */
+
+
+}
